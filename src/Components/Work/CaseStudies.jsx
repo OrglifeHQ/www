@@ -77,7 +77,7 @@ const CaseStudies = () => {
   };
 
   return (
-    <div className="bg-pink-50 py-8 pb-12 overflow-hidden">
+    <div className="bg-pink-50 pt-0 pb-12 overflow-hidden"> {/* Changed py-8 to pt-4 */}
       {/* Header and Arrows - new layout */}
       <div className="flex flex-col sm:flex-row justify-between items-center px-4 sm:px-8 mb-6">
         {/* Mobile layout - heading between arrows */}
