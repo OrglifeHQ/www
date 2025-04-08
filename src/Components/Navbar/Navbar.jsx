@@ -43,7 +43,7 @@ const Navbar = () => {
             <Link to="/work">Work</Link>
           </li>
           <li className="hover:text-gray-500 cursor-pointer">
-            <Link to="/blog">Blog</Link>
+            <Link to="/blogs">Blog</Link>
           </li>
           <li className="hover:text-gray-500 cursor-pointer">
             <Link to="/contact">Contact</Link>

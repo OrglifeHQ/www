@@ -103,7 +103,7 @@ const CaseStudies = () => {
                   <img
                     src={study.image}
                     alt={study.title}
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full objec object-cover object-center"
                   />
                 </div>
                 <div className="p-4 text-center flex-grow flex flex-col justify-between">

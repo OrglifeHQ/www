@@ -44,6 +44,7 @@ const Work = () => {
         "/34.png",
         "/35.png",
       ];
+      
   const settings = {
     dots: false,
     infinite: true,
