@@ -14,7 +14,7 @@ const CaseStudies = () => {
       image: "/army.png",
       containerClass: "w-[280px] sm:w-[350px] md:w-[420px] px-2 sm:px-3",
       imageContainerClass: "h-[350px] sm:h-[450px] md:h-[550px]",
-      link: "/case-studies/indian-army"
+      link: "/case-studies/indian-army",
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ const CaseStudies = () => {
       image: "/army.png",
       containerClass: "w-[220px] sm:w-[250px] md:w-[320px] px-2 sm:px-3",
       imageContainerClass: "h-[250px] sm:h-[300px] md:h-[400px]",
-      link: "/case-studies/espany-life-science"
+      link: "/case-studies/espany-life-science",
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const CaseStudies = () => {
       image: "/army.png",
       containerClass: "w-[250px] sm:w-[300px] md:w-[380px] px-2 sm:px-3",
       imageContainerClass: "h-[300px] sm:h-[400px] md:h-[500px]",
-      link: "/case-studies/youth-parliament"
+      link: "/case-studies/youth-parliament",
     },
     {
       id: 4,
@@ -38,7 +38,7 @@ const CaseStudies = () => {
       image: "/army.png",
       containerClass: "w-[220px] sm:w-[250px] md:w-[320px] px-2 sm:px-3",
       imageContainerClass: "h-[250px] sm:h-[300px] md:h-[400px]",
-      link: "/case-studies/another-project"
+      link: "/case-studies/another-project",
     },
   ];
 
@@ -89,9 +89,9 @@ const CaseStudies = () => {
           >
             <FaArrowLeft className="text-gray-700" />
           </button>
-          
+
           <h2 className="text-2xl font-bold mx-4">CASE STUDIES</h2>
-          
+
           <button
             onClick={() => sliderRef.current.slickNext()}
             className="p-2 bg-white rounded-full shadow-md hover:bg-gray-200 transition"
@@ -127,23 +127,21 @@ const CaseStudies = () => {
       <div className="px-2 sm:px-4">
         <Slider ref={sliderRef} {...settings}>
           {studies.map((study) => (
-            <div 
-              key={study.id} 
+            <div
+              key={study.id}
               className={`${study.containerClass} focus:outline-none`}
             >
-              <div 
+              <div
                 className="border border-gray-200 bg-white h-full shadow-sm overflow-hidden flex flex-col transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer group"
                 onClick={() => handleCardClick(study.link)}
               >
-                <div className={`${study.imageContainerClass} w-full overflow-hidden`}>
+                <div
+                  className={`${study.imageContainerClass} w-full overflow-hidden`}
+                >
                   <img
                     src={study.image}
                     alt={study.title}
-<<<<<<< HEAD
-                    className="w-full h-full objec object-cover object-center"
-=======
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
->>>>>>> 9f02867d03179be9fd5c9aa47494c6e711a556a4
                   />
                 </div>
                 <div className="p-4 text-left">
