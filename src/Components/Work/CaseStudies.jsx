@@ -139,11 +139,7 @@ const CaseStudies = () => {
                   <img
                     src={study.image}
                     alt={study.title}
-<<<<<<< HEAD
-                    className="w-full h-full objec object-cover object-center"
-=======
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
->>>>>>> 9f02867d03179be9fd5c9aa47494c6e711a556a4
                   />
                 </div>
                 <div className="p-4 text-left">
