@@ -9,38 +9,36 @@ const CaseStudies = () => {
 
   const studies = [
     {
+      id: 1,
       title: "INDIAN ARMY",
-      dimensions: "334 x 255",
-      poweredBy: "Powered by HTML.COM",
       image: "/army.png",
-      height: "h-[350px] sm:h-[450px]",
-      width: "w-[300px] sm:w-[360px]",
+      containerClass: "w-[280px] sm:w-[350px] md:w-[420px] px-2 sm:px-3",
+      imageContainerClass: "h-[350px] sm:h-[450px] md:h-[550px]",
+      link: "/case-studies/indian-army"
     },
     {
+      id: 2,
       title: "ESPANY LIFE SCIENCE",
-      dimensions: "404 x 491",
-      poweredBy: "Powered by HTML.COM",
       image: "/army.png",
-      containerHeight: "h-[250px] sm:h-[350px]", // Reduced container height
-      containerWidth: "w-[250px]", // Reduced container width
-      imageHeight: "h-[200px] sm:h-[300px]", // Specific image height
-      imageWidth: "w-[100px]" // Image will fill container width
+      containerClass: "w-[220px] sm:w-[250px] md:w-[320px] px-2 sm:px-3",
+      imageContainerClass: "h-[250px] sm:h-[300px] md:h-[400px]",
+      link: "/case-studies/espany-life-science"
     },
     {
+      id: 3,
       title: "YOUTH PARLIAMENT OF INDIA",
-      dimensions: "404 x 491",
-      poweredBy: "Powered by HTML.COM",
       image: "/army.png",
-      height: "h-[320px] sm:h-[420px]",
-      width: "w-[290px] sm:w-[350px]",
+      containerClass: "w-[250px] sm:w-[300px] md:w-[380px] px-2 sm:px-3",
+      imageContainerClass: "h-[300px] sm:h-[400px] md:h-[500px]",
+      link: "/case-studies/youth-parliament"
     },
     {
+      id: 4,
       title: "ANOTHER PROJECT",
-      dimensions: "404 x 491",
-      poweredBy: "Powered by HTML.COM",
       image: "/army.png",
-      height: "h-[310px] sm:h-[410px]",
-      width: "w-[295px] sm:w-[345px]",
+      containerClass: "w-[220px] sm:w-[250px] md:w-[320px] px-2 sm:px-3",
+      imageContainerClass: "h-[250px] sm:h-[300px] md:h-[400px]",
+      link: "/case-studies/another-project"
     },
   ];
 
@@ -51,67 +49,103 @@ const CaseStudies = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
-    centerMode: true, // This allows variable width slides
-    variableWidth: true, // This enables variable width
+    centerMode: true,
+    variableWidth: true,
     responsive: [
       {
         breakpoint: 1024,
-        settings: { 
+        settings: {
           slidesToShow: 2,
           centerMode: true,
-          variableWidth: true
+          variableWidth: true,
         },
       },
       {
-        breakpoint: 768,
-        settings: { 
+        breakpoint: 640,
+        settings: {
           slidesToShow: 1,
           centerMode: true,
-          variableWidth: true
+          variableWidth: false,
+          centerPadding: "20px",
         },
       },
     ],
   };
 
-  return (
-    <div className="bg-pink-50 py-0 pb-8 overflow-hidden">
-      <h2 className="text-3xl font-bold text-center mb-8">CASE STUDIES</h2>
+  const handleCardClick = (link) => {
+    window.location.href = link;
+  };
 
-      {/* Arrows positioned above the cards */}
-      <div className="flex justify-between items-center px-8 mb-6">
-        <button
-          onClick={() => sliderRef.current.slickPrev()}
-          className="p-2 sm:p-3 bg-white rounded-full shadow-md hover:bg-gray-200 transition"
-        >
-          <FaArrowLeft className="text-gray-700 text-base sm:text-lg" />
-        </button>
-        <button
-          onClick={() => sliderRef.current.slickNext()}
-          className="p-2 sm:p-3 bg-white rounded-full shadow-md hover:bg-gray-200 transition"
-        >
-          <FaArrowRight className="text-gray-700 text-base sm:text-lg" />
-        </button>
+  return (
+    <div className="bg-pink-50 py-8 pb-12 overflow-hidden">
+      {/* Header and Arrows - new layout */}
+      <div className="flex flex-col sm:flex-row justify-between items-center px-4 sm:px-8 mb-6">
+        {/* Mobile layout - heading between arrows */}
+        <div className="sm:hidden flex items-center justify-between w-full mb-4">
+          <button
+            onClick={() => sliderRef.current.slickPrev()}
+            className="p-2 bg-white rounded-full shadow-md hover:bg-gray-200 transition"
+            aria-label="Previous"
+          >
+            <FaArrowLeft className="text-gray-700" />
+          </button>
+          
+          <h2 className="text-2xl font-bold mx-4">CASE STUDIES</h2>
+          
+          <button
+            onClick={() => sliderRef.current.slickNext()}
+            className="p-2 bg-white rounded-full shadow-md hover:bg-gray-200 transition"
+            aria-label="Next"
+          >
+            <FaArrowRight className="text-gray-700" />
+          </button>
+        </div>
+
+        {/* Desktop layout - heading left, arrows right */}
+        <div className="hidden sm:flex w-full justify-between items-center">
+          <h2 className="text-3xl font-bold">CASE STUDIES</h2>
+          <div className="flex space-x-4">
+            <button
+              onClick={() => sliderRef.current.slickPrev()}
+              className="p-2 sm:p-3 bg-white rounded-full shadow-md hover:bg-gray-200 transition"
+              aria-label="Previous"
+            >
+              <FaArrowLeft className="text-gray-700" />
+            </button>
+            <button
+              onClick={() => sliderRef.current.slickNext()}
+              className="p-2 sm:p-3 bg-white rounded-full shadow-md hover:bg-gray-200 transition"
+              aria-label="Next"
+            >
+              <FaArrowRight className="text-gray-700" />
+            </button>
+          </div>
+        </div>
       </div>
 
-      {/* Cards with varying height/width and content */}
-      <div className="px-4">
+      {/* Slider */}
+      <div className="px-2 sm:px-4">
         <Slider ref={sliderRef} {...settings}>
-          {studies.map((study, index) => (
-            <div key={index} className={`${study.width} px-3`}>
-              <div className="border border-gray-200 bg-white h-full shadow-sm overflow-hidden flex flex-col">
-                <div className={`${study.height} w-full overflow-hidden`}>
+          {studies.map((study) => (
+            <div 
+              key={study.id} 
+              className={`${study.containerClass} focus:outline-none`}
+            >
+              <div 
+                className="border border-gray-200 bg-white h-full shadow-sm overflow-hidden flex flex-col transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer group"
+                onClick={() => handleCardClick(study.link)}
+              >
+                <div className={`${study.imageContainerClass} w-full overflow-hidden`}>
                   <img
                     src={study.image}
                     alt={study.title}
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <div className="p-4 text-center flex-grow flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2 uppercase">
-                      {study.title}
-                    </h3>
-                  </div>
+                <div className="p-4 text-left">
+                  <h3 className="text-lg sm:text-xl font-semibold uppercase group-hover:text-orange-600 transition-colors">
+                    {study.title}
+                  </h3>
                 </div>
               </div>
             </div>
