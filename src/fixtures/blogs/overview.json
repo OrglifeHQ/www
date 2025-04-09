@@ -1,21 +1,21 @@
 [
-    {
-      "title": "A few words about us",
-      "description": "Lorem ipsum dolor sit amet  suscipit sapiente esse temporibus quae, nihil voluptates, harum illum laboriosam?",
-      "date": "08 - 12 - 2025",
-      "slug": 1
-    },
-    {
-      "title": "A few words about us",
-      "description": "Lorem ipsum dolor sit amet  suscipit sapiente esse temporibus quae, nihil voluptates, harum illum laboriosam?",
-      "date": "08 - 12 - 2025",
-      "slug": 2
-    },
-    {
-      "title": "A few words about us",
-      "description": "Lorem ipsum dolor sit amet  suscipit sapiente esse temporibus quae, nihil voluptates, harum illum laboriosam?",
-      "date": "08 - 12 - 2025",
-      "slug": 3
-    }
-  ]
+  {
+    "title": "A few words about us",
+    "description": "Lorem ipsum dolor sit amet  suscipit sapiente esse temporibus quae, nihil voluptates, harum illum laboriosam?",
+    "date": "08 - 12 - 2025",
+    "slug": 1
+  },
+  {
+    "title": "A few words about us",
+    "description": "Lorem ipsum dolor sit amet  suscipit sapiente esse temporibus quae, nihil voluptates, harum illum laboriosam?",
+    "date": "08 - 12 - 2025",
+    "slug": 2
+  },
+  {
+    "title": "A few words about us",
+    "description": "Lorem ipsum dolor sit amet  suscipit sapiente esse temporibus quae, nihil voluptates, harum illum laboriosam?",
+    "date": "08 - 12 - 2025",
+    "slug": 3
+  }
+]
   

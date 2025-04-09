@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import data from "../../fixtures/blogs/data.json";
+import BlogSuggestion from "./BlogSuggestion";
 
 const SingleBlog = () => {
   const { slug } = useParams();
@@ -151,6 +152,14 @@ const SingleBlog = () => {
             <p className="font-bold">Tags:</p> Tag one, Tag two, tag three
           </span>
         </div>
+      </section>
+
+      {/* Some blog suggestion */}
+      <section className="w-full flex flex-col gap-8 p-8 items-center">
+        <div className="w-full md:max-w-4/5">
+        <h2 className="text-left font-medium md:text-[2rem] text-[1.5rem]">Other blogs</h2>
+        </div>
+        <BlogSuggestion />
       </section>
     </>
   );
