@@ -7,6 +7,7 @@ import About from "./Components/AboutUs/About";
 import Work from "./Components/Work/Work";
 import Blogs from "./Components/Blogs/index";
 import SingleBlog from "./Components/Blogs/SingleBlog";
+import Contact from "./Components/Contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/work" element={<Work />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blog/:slug" element={<SingleBlog />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
