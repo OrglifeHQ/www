@@ -2,9 +2,9 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="bg-pink-50 px-4 pb-12 sm:px-6 sm:py-12 lg:px-80 lg:py-20">
+    <div className="sm:px-6 sm:py-12 lg:px-80 lg:py-20">
 
-      <div className="w-full max-w-8xl bg-orange-400 p-8 sm:p-16 sm:pt-20 h-[70vh] sm:h-auto sm:min-h-[800px]">
+      <div className="w-full max-w-8xl bg-orange-400 p-8 sm:p-16 sm:pt-20 h-[67vh] sm:h-auto sm:min-h-[800px]">
         <h2 className="text-3xl sm:text-5xl font-bold mb-8 sm:mb-16 text-gray-900">
           Get in Touch
         </h2>
@@ -61,7 +61,7 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-0 mt-8 sm:mt-10">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-0 mt-8 sm:mt-12">
             <button
               type="submit"
               className="w-full cursor-pointer sm:w-[200px] bg-black text-white py-3 sm:py-4 px-6 rounded-none hover:bg-orange-400 hover:text-black uppercase text-sm sm:text-base tracking-wider transition-colors duration-200"

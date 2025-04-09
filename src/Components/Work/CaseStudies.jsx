@@ -210,10 +210,10 @@ const CaseStudies = () => {
   };
 
   return (
-    <div className="bg-pink-50 pt-0 pb-12 overflow-hidden"> {/* Changed py-8 to pt-4 */}
-      {/* Header and Arrows - new layout */}
+    <div className="bg-pink-50 pt-0 pb-12 overflow-hidden"> 
+      
       <div className="flex flex-col sm:flex-row justify-between items-center px-4 sm:px-8 mb-6">
-        {/* Mobile layout - heading between arrows */}
+        
         <div className="sm:hidden flex items-center justify-between w-full mb-4">
           <button
             onClick={() => sliderRef.current.slickPrev()}
@@ -233,8 +233,6 @@ const CaseStudies = () => {
             <FaArrowRight className="text-gray-700" />
           </button>
         </div>
-
-        {/* Desktop layout - heading left, arrows right */}
         <div className="hidden sm:flex w-full justify-between items-center">
           <h2 className="text-3xl font-bold">CASE STUDIES</h2>
           <div className="flex space-x-4">
@@ -255,8 +253,6 @@ const CaseStudies = () => {
           </div>
         </div>
       </div>
-
-      {/* Slider */}
       <div className="px-2 sm:px-4">
         <Slider ref={sliderRef} {...settings}>
           {studies.map((study) => (
