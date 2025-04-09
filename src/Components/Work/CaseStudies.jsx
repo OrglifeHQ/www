@@ -19,7 +19,7 @@ const CaseStudies = () => {
     {
       id: 2,
       title: "ESPANY LIFE SCIENCE",
-      image: "/army.png",
+      image: "https://img.freepik.com/free-photo/demo-digital-device_23-2149243954.jpg",
       containerClass: "w-[220px] sm:w-[250px] md:w-[320px] px-2 sm:px-3",
       imageContainerClass: "h-[250px] sm:h-[300px] md:h-[400px]",
       link: "/case-studies/espany-life-science"
@@ -40,6 +40,139 @@ const CaseStudies = () => {
       imageContainerClass: "h-[250px] sm:h-[300px] md:h-[400px]",
       link: "/case-studies/another-project"
     },
+
+    {
+      id: 5,
+      title: "INDIAN ARMY",
+      image: "/army.png",
+      containerClass: "w-[280px] sm:w-[350px] md:w-[420px] px-2 sm:px-3",
+      imageContainerClass: "h-[350px] sm:h-[450px] md:h-[550px]",
+      link: "/case-studies/indian-army"
+    },
+    {
+      id: 6,
+      title: "ESPANY LIFE SCIENCE",
+      image: "/army.png",
+      containerClass: "w-[220px] sm:w-[250px] md:w-[320px] px-2 sm:px-3",
+      imageContainerClass: "h-[250px] sm:h-[300px] md:h-[400px]",
+      link: "/case-studies/espany-life-science"
+    },
+    {
+      id: 7,
+      title: "YOUTH PARLIAMENT OF INDIA",
+      image: "/army.png",
+      containerClass: "w-[250px] sm:w-[300px] md:w-[380px] px-2 sm:px-3",
+      imageContainerClass: "h-[300px] sm:h-[400px] md:h-[500px]",
+      link: "/case-studies/youth-parliament"
+    },
+    {
+      id: 8,
+      title: "ANOTHER PROJECT",
+      image: "/army.png",
+      containerClass: "w-[220px] sm:w-[250px] md:w-[320px] px-2 sm:px-3",
+      imageContainerClass: "h-[250px] sm:h-[300px] md:h-[400px]",
+      link: "/case-studies/another-project"
+    },
+
+    {
+      id: 9,
+      title: "INDIAN ARMY",
+      image: "/army.png",
+      containerClass: "w-[280px] sm:w-[350px] md:w-[420px] px-2 sm:px-3",
+      imageContainerClass: "h-[350px] sm:h-[450px] md:h-[550px]",
+      link: "/case-studies/indian-army"
+    },
+    {
+      id: 10,
+      title: "ESPANY LIFE SCIENCE",
+      image: "/army.png",
+      containerClass: "w-[220px] sm:w-[250px] md:w-[320px] px-2 sm:px-3",
+      imageContainerClass: "h-[250px] sm:h-[300px] md:h-[400px]",
+      link: "/case-studies/espany-life-science"
+    },
+    {
+      id: 11,
+      title: "YOUTH PARLIAMENT OF INDIA",
+      image: "/army.png",
+      containerClass: "w-[250px] sm:w-[300px] md:w-[380px] px-2 sm:px-3",
+      imageContainerClass: "h-[300px] sm:h-[400px] md:h-[500px]",
+      link: "/case-studies/youth-parliament"
+    },
+    {
+      id: 12,
+      title: "ANOTHER PROJECT",
+      image: "/army.png",
+      containerClass: "w-[220px] sm:w-[250px] md:w-[320px] px-2 sm:px-3",
+      imageContainerClass: "h-[250px] sm:h-[300px] md:h-[400px]",
+      link: "/case-studies/another-project"
+    },
+
+    {
+      id: 13,
+      title: "INDIAN ARMY",
+      image: "/army.png",
+      containerClass: "w-[280px] sm:w-[350px] md:w-[420px] px-2 sm:px-3",
+      imageContainerClass: "h-[350px] sm:h-[450px] md:h-[550px]",
+      link: "/case-studies/indian-army"
+    },
+    {
+      id: 14,
+      title: "ESPANY LIFE SCIENCE",
+      image: "/army.png",
+      containerClass: "w-[220px] sm:w-[250px] md:w-[320px] px-2 sm:px-3",
+      imageContainerClass: "h-[250px] sm:h-[300px] md:h-[400px]",
+      link: "/case-studies/espany-life-science"
+    },
+    {
+      id: 15,
+      title: "YOUTH PARLIAMENT OF INDIA",
+      image: "/army.png",
+      containerClass: "w-[250px] sm:w-[300px] md:w-[380px] px-2 sm:px-3",
+      imageContainerClass: "h-[300px] sm:h-[400px] md:h-[500px]",
+      link: "/case-studies/youth-parliament"
+    },
+    {
+      id: 16,
+      title: "ANOTHER PROJECT",
+      image: "/army.png",
+      containerClass: "w-[220px] sm:w-[250px] md:w-[320px] px-2 sm:px-3",
+      imageContainerClass: "h-[250px] sm:h-[300px] md:h-[400px]",
+      link: "/case-studies/another-project"
+    },
+
+    {
+      id: 17,
+      title: "INDIAN ARMY",
+      image: "/army.png",
+      containerClass: "w-[280px] sm:w-[350px] md:w-[420px] px-2 sm:px-3",
+      imageContainerClass: "h-[350px] sm:h-[450px] md:h-[550px]",
+      link: "/case-studies/indian-army"
+    },
+    {
+      id: 18,
+      title: "ESPANY LIFE SCIENCE",
+      image: "/army.png",
+      containerClass: "w-[220px] sm:w-[250px] md:w-[320px] px-2 sm:px-3",
+      imageContainerClass: "h-[250px] sm:h-[300px] md:h-[400px]",
+      link: "/case-studies/espany-life-science"
+    },
+    {
+      id: 19,
+      title: "YOUTH PARLIAMENT OF INDIA",
+      image: "/army.png",
+      containerClass: "w-[250px] sm:w-[300px] md:w-[380px] px-2 sm:px-3",
+      imageContainerClass: "h-[300px] sm:h-[400px] md:h-[500px]",
+      link: "/case-studies/youth-parliament"
+    },
+    {
+      id: 20,
+      title: "ANOTHER PROJECT",
+      image: "/army.png",
+      containerClass: "w-[220px] sm:w-[250px] md:w-[320px] px-2 sm:px-3",
+      imageContainerClass: "h-[250px] sm:h-[300px] md:h-[400px]",
+      link: "/case-studies/another-project"
+    },
+
   ];
 
   const settings = {

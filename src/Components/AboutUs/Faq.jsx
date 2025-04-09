@@ -238,17 +238,16 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="bg-black text-white min-h-screen">
-      <div className="flex flex-col px-4 lg:px-8 pt-12 pb-4 lg:pt-24">
-        <h1 className="text-3xl font-bold text-center mb-8 lg:text-5xl lg:text-left lg:mb-20">
+    <div className="bg-black text-white min-h-[400px]">
+      <div className="flex flex-col px-4 lg:px-8 pt-12 pb-0 lg:pt-24">
+        <h1 className="text-3xl font-bold text-center mb-8 lg:text-5xl lg:text-left lg:mb-10">
           Our services
         </h1>
 
         <div className="space-y-6 lg:space-y-8 mb-12 lg:mb-20">
-          {" "}
-          {/* Changed mb-20 to mb-12 for mobile and lg:mb-20 for desktop */}
+          
           {faqItems.map((item, index) => (
-            <div key={index} className="border-b border-gray-700">
+            <div key={index} className="border-b border-white">
               <div
                 className="flex justify-between items-start cursor-pointer group py-6 lg:py-8"
                 onClick={() => toggleFAQ(index)}

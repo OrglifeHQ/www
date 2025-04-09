@@ -5,9 +5,9 @@ import RotatingText from "./RoatatingText";
 const Home = () => {
   return (
     <>
-      <div className="w-full h-screen overflow-hidden bg-black ">
+      <div className="w-full h-[35vh] md:h-screen overflow-hidden bg-black">
         <video
-          className="w-full h-full object-fill"
+          className="w-full h-full object-cover"
           autoPlay
           loop
           muted
@@ -16,7 +16,7 @@ const Home = () => {
           <source src="/HomepageVideo.mp4" type="video/mp4" />
         </video>
       </div>
-      <RotatingText/>
+      <RotatingText />
       <Footer />
     </>
   );

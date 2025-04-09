@@ -6,10 +6,11 @@ import Footer from "../Footer/Footer";
 const About = () => {
   return (
     <>
+    <div className="relative">
       <div
-        className="w-full h-[35vh] md:h-screen bg-center bg-no-repeat bg-cover relative"
+        className="fixed w-full h-[35vh] md:h-screen bg-center bg-no-repeat bg-cover -z-10"
         style={{
-          backgroundImage: "url('/1.jpg')",
+          backgroundImage: "url('https://img.freepik.com/free-photo/demo-digital-device_23-2149243954.jpg?ga=GA1.1.1999667974.1744190408&semt=ais_country_boost&w=740')",
         }}
       >
         <div className="absolute top-0 left-0 w-full h-full flex items-center px-6 sm:px-16">
@@ -19,6 +20,7 @@ const About = () => {
           </h1>
         </div>
       </div>
+      <div className="h-[35vh] md:h-screen w-full"></div>
       <div className="bg-pink-50 flex flex-col lg:flex-row items-start justify-between px-6 lg:px-20 py-10 gap-0 lg:gap-0 lg:space-x-20 lg:h-screen">
         <div className="lg:w-1/2 flex flex-col space-y-6">
           <div className="space-y-2 lg:mt-40">
@@ -38,7 +40,7 @@ const About = () => {
 
         <div className="lg:w-2/4 w-full mt-10 lg:mt-30">
           <img
-            src="/1.jpg"
+            src="https://img.freepik.com/free-photo/demo-digital-device_23-2149243954.jpg?ga=GA1.1.1999667974.1744190408&semt=ais_country_boost&w=740"
             alt="Brand Example"
             className="w-full h-auto object-cover"
           />
@@ -77,7 +79,7 @@ const About = () => {
             <div className="w-full md:w-1/2 flex justify-center">
               <div className="relative w-full min-h-[250px] h-[50vh] md:h-[500px] max-w-full md:max-w-[550px] group">
                 <img
-                  src="/1.jpg"
+                  src="https://img.freepik.com/free-photo/demo-digital-device_23-2149243954.jpg?ga=GA1.1.1999667974.1744190408&semt=ais_country_boost&w=740"
                   alt="Parul Prasad"
                   className="w-full h-full object-cover shadow-md"
                 />
@@ -129,7 +131,7 @@ const About = () => {
             <div className="w-full md:w-1/2 flex justify-center">
               <div className="relative w-full min-h-[250px] h-[50vh] md:h-[500px] max-w-full md:max-w-[550px] group">
                 <img
-                  src="/1.jpg"
+                  src="https://img.freepik.com/free-photo/demo-digital-device_23-2149243954.jpg?ga=GA1.1.1999667974.1744190408&semt=ais_country_boost&w=740"
                   alt="Parul Prasad"
                   className="w-full h-full object-cover shadow-md"
                 />
@@ -158,6 +160,7 @@ const About = () => {
         </div>
       </div>
       <Footer />
+      </div>
     </>
   );
 };

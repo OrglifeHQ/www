@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CaseStudies from "./CaseStudies";
 import Faq from "./Faq";
+import ContactForm from "./ContactForm";
+import Footer from "../Footer/Footer";
 
 const Work = () => {
   const logos = [
@@ -86,11 +88,12 @@ const Work = () => {
   };
 
   return (
-    <>
-      <div
-        className="w-full h-[35vh] md:h-screen bg-center bg-no-repeat bg-cover relative"
+    <div className="relative">
+      
+      <div 
+        className="fixed w-full h-[35vh] md:h-screen bg-center bg-no-repeat bg-cover -z-10"
         style={{
-          backgroundImage: "url('/1.jpg')",
+          backgroundImage: "url('https://img.freepik.com/free-photo/demo-digital-device_23-2149243954.jpg')",
         }}
       >
         <div className="absolute top-0 left-0 w-full h-full flex items-center px-6 sm:px-16">
@@ -100,6 +103,9 @@ const Work = () => {
           </h1>
         </div>
       </div>
+      
+      <div className="h-[35vh] md:h-screen w-full"></div>
+      
       <div className="py-8 bg-pink-50">
         <div className="mx-auto max-w-full">
           <div className="mx-0">
@@ -124,9 +130,13 @@ const Work = () => {
           </div>
         </div>
       </div>
+      
+      {/* Your other components - completely unchanged */}
       <CaseStudies />
       <Faq />
-    </>
+      <ContactForm />
+      <Footer />
+    </div>
   );
 };
 
