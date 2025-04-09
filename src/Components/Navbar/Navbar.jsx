@@ -16,11 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      
       <nav className="sticky top-0 z-50 bg-[#E6D7D7] px-6 lg:px-24 py-6 flex justify-between items-center w-full border-b border-gray-300 shadow-md">
-
-
-        
         <div className="flex items-center space-x-2">
           <a href="/" className="cursor-pointer">
             <img
@@ -43,7 +39,7 @@ const Navbar = () => {
             <Link to="/work">Work</Link>
           </li>
           <li className="hover:text-gray-500 cursor-pointer">
-            <Link to="/blogs">Blog</Link>
+            <Link to="/blogs">Blogs</Link>
           </li>
           <li className="hover:text-gray-500 cursor-pointer">
             <Link to="/contact">Contact</Link>
@@ -111,8 +107,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/blog" onClick={() => setIsOpen(false)}>
-              Blog
+            <Link to="/blogs" onClick={() => setIsOpen(false)}>
+              Blogs
             </Link>
           </li>
           <li>
