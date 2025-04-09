@@ -5,7 +5,7 @@ const Blog = ({ title, description, date, slug }) => {
   const navigate = useNavigate();
 
   function handleOpenBlog() {
-    navigate(`blog/${slug}`);
+    navigate(`/blog/${slug}`);
   }
 
   return (
@@ -16,15 +16,15 @@ const Blog = ({ title, description, date, slug }) => {
       <div
         onClick={handleOpenBlog}
         id="content_container"
-        className="absolute w-full bottom-0 bg-red-800 group-hover:p-4 flex flex-col gap-4 cursor-pointer h-0 group-hover:h-full overflow-hidden transition-all duration-250 ease-in-out"
+        className="absolute w-full bottom-0 bg-orange-400 max-md:p-8 group-hover:p-4 flex flex-col gap-4 cursor-pointer h-full md:h-0 group-hover:h-full overflow-hidden transition-all duration-250 ease-in-out"
       >
-        <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        <p className="md:opacity-0 group-hover:opacity-100 transition-opacity duration-500">
           {date}
         </p>
-        <h1 className="text-[1.5rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        <h2 className="text-[1.5rem] font-medium md:opacity-0 group-hover:opacity-100 transition-opacity duration-500">
           {title}
-        </h1>
-        <p className="opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        </h2>
+        <p className="md:opacity-0 group-hover:opacity-100 transition-opacity duration-500">
           {description}
         </p>
         <span className="cursor-pointer mt-4 hover:underline underline-offset-4">
