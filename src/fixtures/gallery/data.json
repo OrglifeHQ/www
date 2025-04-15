@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Glossy",
+        "slug": "glossy",
+        "details": {
+            "title": "Glossy",
+            "content": [
+                "Glossy is a seasoned full-stack developer with a knack for creating visually stunning interfaces.",
+                "She has over 8 years of experience working with enterprise-grade systems.",
+                "In her free time, she contributes to open-source and mentors junior developers."
+            ]
+        },
+        "image": "https://thispersondoesnotexist.com/"
+    },
+    {
+        "name": "Jet Nova",
+        "slug": "jet-nova",
+        "details": {
+            "title": "Jet Nova",
+            "content": [
+                "Jet is a DevOps engineer with deep knowledge in CI/CD pipelines and Kubernetes orchestration.",
+                "He's worked at multiple startups, helping scale their infrastructure efficiently.",
+                "Outside of work, Jet loves building mechanical keyboards and tinkering with 3D printing."
+            ]
+        },
+        "image": "https://thispersondoesnotexist.com/"
+    },
+    {
+        "name": "Arya Sparks",
+        "slug": "arya-sparks",
+        "details": {
+            "title": "Arya Sparks",
+            "content": [
+                "Arya is a front-end wizard specializing in animations and performance optimization.",
+                "She’s passionate about building intuitive and delightful user experiences.",
+                "She also runs a tech blog and speaks at front-end conferences globally."
+            ]
+        },
+        "image": "https://thispersondoesnotexist.com/"
+    }
+]

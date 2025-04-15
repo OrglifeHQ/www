@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "name": "Aarav Shah",
+        "role": "Frontend Developer",
+        "social": {
+            "linkedin": "https://linkedin.com/in/aaravshah"
+        },
+        "image": "https://i.pravatar.cc/150?img=1"
+    },
+    {
+        "id": "2",
+        "name": "Meera Patel",
+        "role": "Backend Developer",
+        "social": {
+            "linkedin": "https://linkedin.com/in/meerapatel"
+        },
+        "image": "https://i.pravatar.cc/150?img=2"
+    },
+    {
+        "id": "3",
+        "name": "Devansh Rathi",
+        "role": "UI/UX Designer",
+        "social": {
+            "linkedin": "https://linkedin.com/in/devanshrathi"
+        },
+        "image": "https://i.pravatar.cc/150?img=3"
+    },
+    {
+        "id": "4",
+        "name": "Isha Verma",
+        "role": "Product Manager",
+        "social": {
+            "linkedin": "https://linkedin.com/in/ishaverma"
+        },
+        "image": "https://i.pravatar.cc/150?img=4"
+    },
+    {
+        "id": "5",
+        "name": "Kunal Joshi",
+        "role": "DevOps Engineer",
+        "social": {
+            "linkedin": "https://linkedin.com/in/kunaljoshi"
+        },
+        "image": "https://i.pravatar.cc/150?img=5"
+    },
+    {
+        "id": "6",
+        "name": "Kunal Joshi",
+        "role": "DevOps Engineer",
+        "social": {
+            "linkedin": "https://linkedin.com/in/kunaljoshi"
+        },
+        "image": "https://i.pravatar.cc/150?img=7"
+    }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Ryan Storm",
+    "position": "CEO at psum",
+    "image": "https://demoxml.com/html/montek-demo/assets/images/resource/author-2.jpg",
+    "quote": "Exceptional work, exceptional team. Montek consistently delivers top-notch results."
+  },
+  {
+    "id": 2,
+    "name": "Eliy Walker",
+    "position": "Manager at cavernLTD",
+    "image": "https://demoxml.com/html/montek-demo/assets/images/resource/author-2.jpg",
+    "quote": "Exceptional work, exceptional team. Montek consistently delivers top-notch results."
+  },
+  {
+    "id": 3,
+    "name": "Graham Bolt",
+    "position": "Produencer Photography server",
+    "image": "https://demoxml.com/html/montek-demo/assets/images/resource/author-2.jpg",
+    "quote": "Exceptional work, exceptional team. Montek consistently delivers top-notch results."
+  }
+]

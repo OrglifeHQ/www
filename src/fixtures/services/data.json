@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Mobile App\nDevelopment",
+    "icon": "/service-1.png",
+    "textColor": "text-white",
+    "borderColor": "border-white"
+  },
+  {
+    "title": "Video Production &\nEditing",
+    "icon": "/service-1.png",
+    "textColor": "text-white",
+    "borderColor": "border-white"
+  },
+  {
+    "title": "Print & Graphic\nDesign",
+    "icon": "/service-1.png",
+    "textColor": "text-white",
+    "borderColor": "border-white"
+  },
+  {
+    "title": "Strategic Branding\nServices",
+    "icon": "/service-1.png",
+    "textColor": "text-white",
+    "borderColor": "border-white"
+  }
+]
