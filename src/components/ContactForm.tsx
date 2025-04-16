@@ -1,5 +1,6 @@
 "use client";
 
+import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { useForm } from "react-hook-form";
@@ -13,7 +14,7 @@ export type ContactFormType = {
 };
 
 const ContactForm: React.FC = () => {
-  const router = useRouter();
+    const router: AppRouterInstance = useRouter();
     const {
         register,
         handleSubmit,
@@ -31,14 +32,9 @@ const ContactForm: React.FC = () => {
                 alert("Network response was not ok");
                 return;
             }
-            const result = await response.json();
-            console.log("result", result);
             
-            console.log("result", result);
-
-            if (result.success === true) {
-                router.push("/");
-            }
+            router.push("/");
+            
         } catch (error: any) {
             console.error(error);
             alert(error.message);

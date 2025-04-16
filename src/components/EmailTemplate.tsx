@@ -8,7 +8,10 @@ export const EmailTemplate: React.FC<Readonly<ContactFormType>> = ({
     phone,
     subject,
 }) => (
-    <div>
-        <h1>Welcome, {name}!</h1>
+    <div style={{display: "flex", flexDirection: "column", gap: "16px"}}>
+        <p style={{ fontSize: 24 }}>Nmae: {name}!</p>
+        <p style={{ fontSize: 16 }}>Phone: {phone}!</p>
+        <p style={{ fontSize: 16 }}>Email: {email}!</p>
+        <p style={{ fontSize: 16 }}>Message: {message}!</p>
     </div>
 );
