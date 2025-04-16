@@ -15,6 +15,7 @@ export type ContactFormType = {
 
 const ContactForm: React.FC = () => {
     const router: AppRouterInstance = useRouter();
+    const [isLoading, setIsLoading] = React.useState<boolean>(false);
     const {
         register,
         handleSubmit,
@@ -23,6 +24,7 @@ const ContactForm: React.FC = () => {
 
     const onSubmit = async (data: ContactFormType) => {
         try {
+            setIsLoading(true);
             const response = await fetch("/api/send-email/v2", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -30,14 +32,16 @@ const ContactForm: React.FC = () => {
             });
             if (!response.ok) {
                 alert("Network response was not ok");
+                setIsLoading(false);
                 return;
             }
-            
+
+            setIsLoading(false);
             router.push("/");
-            
         } catch (error: any) {
             console.error(error);
             alert(error.message);
+            setIsLoading(false);
         }
     };
 
@@ -140,7 +144,7 @@ const ContactForm: React.FC = () => {
                 type="submit"
                 className="h-12 cursor-pointer bg-gradient-to-b from-white/10 to-purple-900 px-8 font-semibold text-white transition"
             >
-                SEND
+                {isLoading ? "Sending..." : "Send"}
             </button>
         </form>
     );
