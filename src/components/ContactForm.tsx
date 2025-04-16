@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import React from "react";
 import { useForm } from "react-hook-form";
 
-type FormData = {
+export type ContactFormType = {
     name: string;
     email: string;
     phone: string;
@@ -18,11 +18,11 @@ const ContactForm: React.FC = () => {
         register,
         handleSubmit,
         formState: { errors },
-    } = useForm<FormData>();
+    } = useForm<ContactFormType>();
 
-    const onSubmit = async (data: FormData) => {
+    const onSubmit = async (data: ContactFormType) => {
         try {
-            const response = await fetch("/api/send-email", {
+            const response = await fetch("/api/send-email/v2", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),
