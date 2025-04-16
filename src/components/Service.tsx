@@ -3,7 +3,7 @@ import services from "../fixtures/services/data.json";
 
 const ServicesSection: React.FC = () => {
   return (
-    <section className="w-full min-h-[500px] flex items-center justify-center py-16 relative overflow-hidden bg-gradient-to-b from-white/10 to-purple-900">
+    <section className="w-full min-h-[500px] flex items-center justify-center py-16 relative overflow-hidden bg-gradient-to-b to-white/10 from-purple-900">
       <div className="w-full md:max-w-7/8 mx-auto max-md:px-4">
         {/* Section Title */}
         <div className="text-left mb-12">
