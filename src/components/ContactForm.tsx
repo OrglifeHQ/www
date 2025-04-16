@@ -1,10 +1,11 @@
 "use client";
 
+import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { useForm } from "react-hook-form";
 
-type FormData = {
+export type ContactFormType = {
     name: string;
     email: string;
     phone: string;
@@ -13,33 +14,34 @@ type FormData = {
 };
 
 const ContactForm: React.FC = () => {
-  const router = useRouter();
+    const router: AppRouterInstance = useRouter();
+    const [isLoading, setIsLoading] = React.useState<boolean>(false);
     const {
         register,
         handleSubmit,
         formState: { errors },
-    } = useForm<FormData>();
+    } = useForm<ContactFormType>();
 
-    const onSubmit = async (data: FormData) => {
+    const onSubmit = async (data: ContactFormType) => {
         try {
-            const response = await fetch("/api/contact", {
+            setIsLoading(true);
+            const response = await fetch("/api/send-email/v2", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),
             });
             if (!response.ok) {
                 alert("Network response was not ok");
+                setIsLoading(false);
                 return;
             }
-            const result = await response.json();
-            console.log("result", result);
 
-            if (result.success === true) {
-                router.push("/");
-            }
+            setIsLoading(false);
+            router.push("/");
         } catch (error: any) {
             console.error(error);
             alert(error.message);
+            setIsLoading(false);
         }
     };
 
@@ -142,7 +144,7 @@ const ContactForm: React.FC = () => {
                 type="submit"
                 className="h-12 cursor-pointer bg-gradient-to-b from-white/10 to-purple-900 px-8 font-semibold text-white transition"
             >
-                SEND
+                {isLoading ? "Sending..." : "Send"}
             </button>
         </form>
     );
