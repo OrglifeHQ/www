@@ -1,11 +1,13 @@
 import React from "react";
 import Team from "@/components/Team";
+import { url } from "inspector";
 
 const About: React.FC = () => {
   return (
     <>
       {/* Details section */}
-      <section className="flex h-full w-full flex-col items-center bg-cover bg-center max-md:px-4 py-24">
+      <section className="flex h-full w-full flex-col items-center bg-cover bg-center max-md:px-4 py-24"
+      >
         <div className="flex w-full flex-col gap-16 md:max-w-7/8">
           {/* Header text */}
           <div className="flex w-full flex-col items-center gap-4">

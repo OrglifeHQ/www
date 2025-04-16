@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 import services from "../fixtures/services/data.json";
 
 const ServicesSection: React.FC = () => {
@@ -6,18 +8,30 @@ const ServicesSection: React.FC = () => {
     <section className="w-full min-h-[500px] flex items-center justify-center py-16 relative overflow-hidden bg-gradient-to-b to-white/10 from-purple-900">
       <div className="w-full md:max-w-7/8 mx-auto max-md:px-4">
         {/* Section Title */}
-        <div className="text-left mb-12">
-          <h2 className="text-[2rem] font-['Clash_Display'] font-semibold text-white mb-3">SERVICES</h2>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.4}}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="text-left mb-12"
+        >
+          <h2 className="text-[2rem] font-['Clash_Display'] font-semibold text-white mb-3">
+            SERVICES
+          </h2>
+        </motion.div>
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
           {services.map((service, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
               className="relative p-8 border border-white/25 group overflow-hidden"
             >
-              {/* Hover overlay - now working */}
+              {/* Hover overlay */}
               <div className="absolute inset-0 bg-black opacity-0 rotate-x-90 transition-transform group-hover:rotate-x-180 origin-center border-white group-hover:opacity-100 duration-500 z-10"></div>
 
               {/* Content */}
@@ -33,7 +47,7 @@ const ServicesSection: React.FC = () => {
                   />
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

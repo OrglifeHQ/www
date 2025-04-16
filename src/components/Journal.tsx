@@ -1,20 +1,34 @@
+"use client";
 import React from "react";
 import journals from "../fixtures/journals/data.json";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Journal: React.FC = () => {
   return (
-    <section className="w-full bg-[url('https://images.unsplash.com/photo-1526289034009-0240ddb68ce3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJhY2tncm91bmQlMjBkYXJrfGVufDB8fDB8fHww')] bg-no-repeat bg-cover bg-fixed h-full flex flex-col items-center py-24 text-white">
+    <section className="overflow-hidden w-full bg-[url('https://images.unsplash.com/photo-1526289034009-0240ddb68ce3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJhY2tncm91bmQlMjBkYXJrfGVufDB8fDB8fHww')] bg-no-repeat bg-cover bg-fixed h-full flex flex-col items-center py-24 text-white">
       <div className="w-full flex flex-col items-center">
         <div className="w-full px-4 md:max-w-7/8">
           <h2 className="uppercase text-2xl md:text-[2rem] font-['Clash_Display'] font-semibold">journals</h2>
         </div>
-        <div className="py-8 px-[3.125%] md:px-[6.25%] flex overflow-auto no-scrollbar gap-4 md:gap-8 w-full text-white">
+        <motion.div
+  initial={{ y: "-100%", opacity: 0 }}  // Start from top
+  whileInView={{ y: 0, opacity: 1 }}    // Animate to original position
+  transition={{
+    duration: 0.8,
+    ease: "easeOut",
+    // Add delay if needed
+  }}
+  viewport={{ once: true, amount: 0 }}
+  className="py-8 px-[3.125%] md:px-[6.25%] flex overflow-auto no-scrollbar gap-4 md:gap-8 w-full text-white"
+>
           {/* Journal cards */}
           {journals.map((journal, index) => {
             return (
               <div
                 key={index}
+                 
+                
                 className="relative group gap-24 overflow-hidden p-8 bg-black flex w-full max-md:min-w-7/8 md:min-w-1/4 flex-col items-end"
               >
                 {/* Gradient Overlay */}
@@ -42,10 +56,10 @@ const Journal: React.FC = () => {
                     <path d="M14.5895 16.0032L5.98291 7.39664L7.39712 5.98242L16.0037 14.589V7.00324H18.0037V18.0032H7.00373V16.0032H14.5895Z"></path>
                   </svg>
                 </Link>
-              </div>
+                </div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
