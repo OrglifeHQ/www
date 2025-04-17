@@ -1,4 +1,4 @@
-import { createTransport, TransportOptions } from "nodemailer";
+import { createTransport } from "nodemailer";
 import SMTPTransport from "nodemailer/lib/smtp-transport";
 
 export const transporter = createTransport({

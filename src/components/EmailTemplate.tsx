@@ -1,4 +1,4 @@
-import { config } from "@/lib/config";
+import { siteConfig } from "@/lib/config";
 import {
     Body,
     Container,
@@ -26,7 +26,9 @@ export const EmailTemplate = ({
             <Preview>New Contact Form Submission from {name}</Preview>
             <Body style={main}>
                 <Container style={container}>
-                    <Heading style={header as any}>Contact Form Submission</Heading>
+                    <Heading style={header as any}>
+                        Contact Form Submission
+                    </Heading>
                     <Hr style={hr} />
                     <Section style={section}>
                         <Row style={row}>
@@ -59,7 +61,8 @@ export const EmailTemplate = ({
                     </Section>
                     <Hr style={hr} />
                     <Text style={footer as any}>
-                        This email was sent from {config.company.name}'s' website contact form.
+                        This email was sent from {siteConfig.company.name}'s'
+                        website contact form.
                     </Text>
                 </Container>
             </Body>
