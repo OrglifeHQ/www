@@ -41,7 +41,7 @@ export const Navbar: React.FC = () => {
                     ORGLIFE
                 </Link>
 
-                {/* Hamburger (mobile) */}
+                {/* Hamburger icon (mobile) */}
                 <div className="md:hidden">
                     <button onClick={toggleMenu} className="focus:outline-none">
                         {isOpen ? (
