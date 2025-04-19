@@ -23,7 +23,7 @@ const Testimonials: React.FC = () => {
             >
                 {testimonials.map((testimonial, index) => (
                     <div
-                        key={testimonial.id}
+                        key={index}
                         className="group relative flex min-w-7/8 flex-col gap-8 border border-white/25 p-6 text-white md:min-w-1/4"
                     >
                         <div className="flex items-center gap-8">

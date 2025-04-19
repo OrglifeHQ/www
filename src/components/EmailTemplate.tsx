@@ -61,8 +61,8 @@ export const EmailTemplate = ({
                     </Section>
                     <Hr style={hr} />
                     <Text style={footer as any}>
-                        This email was sent from {siteConfig.company.name}'s'
-                        website contact form.
+                        This email was sent from {siteConfig.company.name}
+                        &apos;s website contact form.
                     </Text>
                 </Container>
             </Body>

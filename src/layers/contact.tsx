@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 import { siteConfig } from "@/lib/config";
 
