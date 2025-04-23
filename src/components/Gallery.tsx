@@ -6,7 +6,10 @@ import { motion } from "motion/react";
 
 const Gallery: React.FC = () => {
     return (
-        <section className="flex h-full w-full flex-col items-center text-white max-md:px-4 max-md:py-16 md:py-16">
+        <section
+            id="projects"
+            className="flex h-full w-full flex-col items-center text-white max-md:px-4 max-md:py-16 md:py-16"
+        >
             <div className="w-full md:max-w-7/8">
                 <h2 className="font-['Clash_Display'] text-2xl font-semibold uppercase md:text-[2rem]">
                     Projects

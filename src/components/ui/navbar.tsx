@@ -32,7 +32,7 @@ export const Navbar: React.FC = () => {
     const isActive = (path: string) => pathname === path;
 
     return (
-        <nav className="relative z-50 text-white max-md:flex max-md:h-16 max-md:bg-black max-md:px-4 md:py-8">
+        <nav className="relative z-[9999] text-white max-md:flex max-md:h-16 max-md:bg-black max-md:px-4 md:py-8">
             <div className="mx-auto flex w-full items-center justify-between md:max-w-7/8">
                 <Link
                     href="/"
