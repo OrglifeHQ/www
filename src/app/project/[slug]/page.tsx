@@ -31,6 +31,12 @@ export async function generateMetadata({
     };
 }
 
+export async function generateStaticParams() {
+    return projects.map((project) => ({
+        slug: project.slug.toString(),
+    }));
+}
+
 const ProjectPage = async ({
     params,
 }: {

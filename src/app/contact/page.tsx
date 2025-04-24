@@ -10,7 +10,8 @@ export const metadata: Metadata = {
         siteConfig.company.name,
         "Contact " + siteConfig.company.name.split(" ")[0],
     ],
-    description: "Contact details about the company" + siteConfig.company.name,
+    description:
+        "Contact details about the company" + " " + siteConfig.company.name,
 };
 
 const Contact = () => {

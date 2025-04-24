@@ -31,6 +31,12 @@ export async function generateMetadata({
     };
 }
 
+export async function generateStaticParams() {
+    return journals.map((journal) => ({
+        slug: journal.slug.toString(),
+    }));
+}
+
 const JournalPage = async ({
     params,
 }: {

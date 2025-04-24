@@ -10,7 +10,7 @@ export const metadata: Metadata = {
         siteConfig.company.name,
         "About " + siteConfig.company.name.split(" ")[0],
     ],
-    description: "Details about the company" + siteConfig.company.name,
+    description: "Details about the company" + " " + siteConfig.company.name,
 };
 
 const About = () => {

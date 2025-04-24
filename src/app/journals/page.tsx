@@ -10,7 +10,7 @@ export const metadata: Metadata = {
         siteConfig.company.name,
         "Journals of " + siteConfig.company.name.split(" ")[0],
     ],
-    description: "All journals of the company" + siteConfig.company.name,
+    description: "All journals of the company" + " " + siteConfig.company.name,
 };
 
 const Journals = () => {
