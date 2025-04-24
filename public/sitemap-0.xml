@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://orglife.co.in/twitter-image.png</loc><lastmod>2025-04-24T10:34:57.995Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://orglife.co.in/opengraph-image.png</loc><lastmod>2025-04-24T10:34:57.996Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://orglife.co.in/journal/design</loc><lastmod>2025-04-24T10:34:57.996Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://orglife.co.in/journal/development</loc><lastmod>2025-04-24T10:34:57.996Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://orglife.co.in/projects</loc><lastmod>2025-04-24T10:34:57.996Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://orglife.co.in/project/arya-sparks</loc><lastmod>2025-04-24T10:34:57.996Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://orglife.co.in/project/glossy</loc><lastmod>2025-04-24T10:34:57.996Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://orglife.co.in/project/jet-nova</loc><lastmod>2025-04-24T10:34:57.996Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://orglife.co.in/about</loc><lastmod>2025-04-24T10:34:57.996Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://orglife.co.in/contact</loc><lastmod>2025-04-24T10:34:57.996Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://orglife.co.in</loc><lastmod>2025-04-24T10:34:57.996Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://orglife.co.in/journals</loc><lastmod>2025-04-24T10:34:57.996Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://orglife.co.in/opengraph-image.png</loc><lastmod>2025-04-24T10:50:43.011Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://orglife.co.in/contact</loc><lastmod>2025-04-24T10:50:43.016Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://orglife.co.in/journals</loc><lastmod>2025-04-24T10:50:43.016Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://orglife.co.in</loc><lastmod>2025-04-24T10:50:43.016Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://orglife.co.in/about</loc><lastmod>2025-04-24T10:50:43.016Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://orglife.co.in/projects</loc><lastmod>2025-04-24T10:50:43.016Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://orglife.co.in/twitter-image.png</loc><lastmod>2025-04-24T10:50:43.016Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://orglife.co.in/manifest.webmanifest</loc><lastmod>2025-04-24T10:50:43.016Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://orglife.co.in/journal/design</loc><lastmod>2025-04-24T10:50:43.016Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://orglife.co.in/journal/development</loc><lastmod>2025-04-24T10:50:43.016Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://orglife.co.in/project/arya-sparks</loc><lastmod>2025-04-24T10:50:43.016Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://orglife.co.in/project/glossy</loc><lastmod>2025-04-24T10:50:43.016Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://orglife.co.in/project/jet-nova</loc><lastmod>2025-04-24T10:50:43.016Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>
