@@ -7,7 +7,7 @@ export const Hero: React.FC = () => {
         <section className="relative flex w-full flex-col overflow-hidden bg-black max-md:px-4">
             {/* Background Video */}
             <video
-                className="absolute inset-0 z-0 h-full w-full object-cover"
+                className="absolute inset-0 z-0 h-full w-full object-cover opacity-49"
                 src="/video/hero.mp4"
                 autoPlay
                 loop
@@ -54,7 +54,7 @@ export const Hero: React.FC = () => {
             </div>
 
             {/* Bottom Text Row */}
-            <div className="absolute inset-x-0 bottom-12 z-50 mx-auto hidden w-full items-center justify-center gap-16 text-white md:flex md:max-w-7/8">
+            <div className="absolute inset-x-0 bottom-12 z-50 mx-auto hidden w-full items-center justify-between gap-16 text-white md:flex md:max-w-7/8">
                 <span className="border-t border-white/50 pt-4">
                     Our visionary team crafts
                     <br />

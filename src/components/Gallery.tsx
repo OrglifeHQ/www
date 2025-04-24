@@ -27,7 +27,7 @@ const Gallery: React.FC = () => {
                                 className="group relative flex flex-col items-start gap-4 overflow-hidden border border-white/25 bg-black p-8"
                             >
                                 {/* Gradient Overlay */}
-                                <div className="absolute inset-0 z-0 rotate-y-90 bg-gradient-to-b from-white/10 to-purple-900 opacity-0 transition-transform duration-500 group-hover:rotate-y-180 group-hover:opacity-100" />
+                                <div className="to-primary/50 absolute inset-0 z-0 rotate-y-90 bg-gradient-to-b from-white/0 opacity-0 transition-transform duration-500 group-hover:rotate-y-180 group-hover:opacity-100" />
 
                                 {/* Content */}
                                 <div

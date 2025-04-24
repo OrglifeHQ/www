@@ -7,7 +7,8 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "prepare": "husky"
+        "prepare": "husky",
+        "postbuild": "next-sitemap"
     },
     "dependencies": {
         "@react-email/components": "^0.0.36",
@@ -19,6 +20,7 @@
         "lucide-react": "^0.488.0",
         "motion": "^12.7.3",
         "next": "15.3.0",
+        "next-sitemap": "^4.2.3",
         "nodemailer": "^6.10.1",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",

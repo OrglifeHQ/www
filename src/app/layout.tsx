@@ -30,9 +30,25 @@ export default function RootLayout({
             <body
                 className={`${geistSans.variable} bg-black text-white antialiased`}
             >
-                <Navbar />
-                {children}
-                <Footer />
+                <header className="w-full">
+                    <Navbar />
+                </header>
+                <main className="w-full">{children}</main>
+                <footer className="w-full">
+                    <Footer />
+                </footer>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "Organization",
+                            name: "Orglife Industries Pvt. Ltd.",
+                            url: "https://orglife.co.in",
+                            logo: "https://orglife.co.in/logo.png",
+                        }),
+                    }}
+                />
             </body>
         </html>
     );

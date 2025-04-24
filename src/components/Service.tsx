@@ -5,7 +5,7 @@ import services from "../fixtures/services/data.json";
 
 const ServicesSection: React.FC = () => {
     return (
-        <section className="relative flex min-h-[500px] w-full items-center justify-center overflow-hidden bg-gradient-to-b from-black to-purple-900 py-16">
+        <section className="to-primary/50 relative flex min-h-[500px] w-full items-center justify-center overflow-hidden bg-gradient-to-b from-black py-16">
             <div className="mx-auto w-full max-md:px-4 md:max-w-7/8">
                 {/* Section Title */}
                 <motion.div

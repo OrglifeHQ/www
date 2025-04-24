@@ -142,7 +142,7 @@ const ContactForm: React.FC = () => {
 
             <button
                 type="submit"
-                className="h-12 cursor-pointer bg-gradient-to-b from-white/10 to-purple-900 px-8 font-semibold text-white transition"
+                className="to-primary/50 h-12 cursor-pointer bg-gradient-to-b from-white/0 px-8 font-semibold text-white transition"
             >
                 {isLoading ? "Sending..." : "Send"}
             </button>

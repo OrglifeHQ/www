@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://orglife.co.in
+
+# Sitemaps
+Sitemap: https://orglife.co.in/sitemap.xml

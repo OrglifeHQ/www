@@ -56,7 +56,7 @@ const Testimonials: React.FC = () => {
                         </div>
 
                         {/* Gradient Overlay */}
-                        <div className="absolute inset-0 z-0 rotate-x-90 bg-gradient-to-b from-purple-900 to-white/10 opacity-0 transition-transform duration-500 group-hover:rotate-x-180 group-hover:opacity-100" />
+                        <div className="from-primary/50 absolute inset-0 z-0 rotate-x-90 bg-gradient-to-b to-white/0 opacity-0 transition-transform duration-500 group-hover:rotate-x-180 group-hover:opacity-100" />
                     </div>
                 ))}
             </motion.div>
